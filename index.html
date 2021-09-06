@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
+    />
+    <title>UberEats</title>
   </head>
   <!-- CONTENT START -->
   <body>
     <div class="page">
       <!-- HEADER START -->
       <header class="header">
-        <a href="#" class="logo"
-          ><img
-            src="./images/header/logo.svg"
-            alt="Логотип UberEats"
-            class="logo__pic"
-        /></a>
-        <a href="#" class="header__button-login">Войти</a>
-        <a href="#" class="header__button-basket"></a>
+        <div class="container">
+          <a href="#" class="logo"
+            ><img
+              src="./images/header/logo.svg"
+              alt="Логотип UberEats"
+              class="logo__pic"
+          /></a>
+          <a href="#" class="header__button-login">Войти</a>
+          <a href="#" class="header__button-basket"></a>
+        </div>
       </header>
 
       <!-- MAIN START -->
@@ -33,9 +45,9 @@
               placeholder="Поиск по ресторанам и кухням"
             />
           </form>
-          <h1 class="section-title"></h1>
+          <h1 class="section-title">Рестораны в Москве</h1>
           <ul class="cards">
-            <li class="card">
+            <li class="card card_active">
               <img src="./images/cards/md.png" alt="" class="card__pic" />
               <h2 class="card__title">Макдоналдс — Газетный</h2>
               <p class="card__info">₽₽ • Бургеры</p>
@@ -99,83 +111,107 @@
 
       <!-- FOOTER START -->
       <footer class="footer">
-        <div class="footer__row">
-          <a href="#" class="logo"
-            ><img
-              src="./images/footer/white-logo.svg"
-              alt=""
-              class="logo__footer"
-          /></a>
-        </div>
+        <div class="container container_place_footer">
+          <div class="footer__row">
+            <a href="#" class="logo"
+              ><img
+                src="./images/footer/white-logo.svg"
+                alt=""
+                class="logo__footer"
+            /></a>
+          </div>
 
-        <div class="footer__row">
-          <div class="footer__column">
-            <form action class="language-form" method="POST">
-              <select name="language" id="language" class="language-form__list">
-                <option value="Русский" class="language-form__item">
-                  Русский
-                </option>
-              </select>
+          <div class="footer__row">
+            <div class="footer__column">
+              <form action class="language-form" method="POST">
+                <img
+                  src="./images/footer/world.svg"
+                  alt
+                  class="language__pic"
+                />
+                <select
+                  name="language"
+                  id="language"
+                  class="language-form__list"
+                >
+                  <option value="Русский" class="language-form__item">
+                    Русский
+                  </option>
+                </select>
+              </form>
               <p class="hashtag"><span class="span-accent">#</span>UberEats</p>
               <ul class="social-items">
                 <li class="social__item">
-                  <a href="#" class="social__button"></a>
+                  <a href="#" class="social__button social__button_fb"></a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__button"></a>
+                  <a href="#" class="social__button social__button_tw"></a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__button"></a>
+                  <a href="#" class="social__button social__button_insta"></a>
                 </li>
               </ul>
-            </form>
+            </div>
+            <ul class="info">
+              <li class="info__item">
+                <a href="#" class="footer__link">Об UberEats</a>
+              </li>
+              <li class="info__item">
+                <a href="#" class="footer__link"
+                  >Станьте партнёром по доставке</a
+                >
+              </li>
+              <li class="info__item">
+                <a href="#" class="footer__link">Станьте парнёром-рестораном</a>
+              </li>
+            </ul>
+            <ul class="info">
+              <li class="info__item">
+                <a href="#" class="footer__link">Все города</a>
+              </li>
+              <li class="info__item">
+                <a href="#" class="footer__link">Цены</a>
+              </li>
+              <li class="info__item">
+                <a href="#" class="footer__link">Помощь</a>
+              </li>
+              <li class="info__item">
+                <a href="#" class="footer__link" lang="en">FAQs</a>
+              </li>
+            </ul>
           </div>
-          <ul class="about">
-            <li class="about__item">
-              <a href="#" class="about__link">Об UberEats</a>
-            </li>
-            <li class="about__item">
-              <a href="#" class="about__link">Станьте партнёром по доставке</a>
-            </li>
-            <li class="about__item">
-              <a href="#" class="about__link">Станьте парнёром-рестораном</a>
-            </li>
-          </ul>
-          <ul class="info">
-            <li class="info__item">
-              <a href="#" class="info__link">Все города</a>
-            </li>
-            <li class="info__item"><a href="#" class="info__link">Цены</a></li>
-            <li class="info__item">
-              <a href="#" class="info__link">Помощь</a>
-            </li>
-            <li class="info__item">
-              <a href="#" class="info__link" lang="en">FAQs</a>
-            </li>
-          </ul>
-        </div>
 
-        <div class="footer__row">
-          <a href="#" class="app-link"
-            ><img
-              src="./images/footer/app/appstore.png"
-              alt=""
-              class="app-link__pic"
-          /></a>
-          <a href="#" class="app-link"
-            ><img
-              src="./images/footer/app/googleplay.png"
-              alt=""
-              class="app-link__pic"
-          /></a>
-        </div>
+          <div class="footer__row footer__row_download">
+            <a href="#" class="app-link"
+              ><img
+                src="./images/footer/app/appstore.png"
+                alt=""
+                class="app-link__pic"
+            /></a>
+            <a href="#" class="app-link"
+              ><img
+                src="./images/footer/app/googleplay.png"
+                alt=""
+                class="app-link__pic"
+            /></a>
+          </div>
 
-        <div class="footer__row">
-          <p class="footer__copyright-text" lang="en">
-            © 2017 Uber Technologies Inc.
-          </p>
-          <p class="footer__copyright-text">Обработка персональных данных</p>
-          <p class="footer__copyright-text">Пользовательское соглашение</p>
+          <div class="footer__row">
+            <a
+              href="#"
+              target="_blank"
+              class="footer__copyright-link"
+              lang="en"
+            >
+              © 2017 Uber Technologies Inc.
+            </a>
+            <a href="#" target="_blank" class="footer__copyright-link"
+              >Обработка персональных данных</a
+            >
+            <a href="#" target="_blank" class="footer__copyright-link"
+              >Пользовательское соглашение</a
+            >
+          </div>
         </div>
       </footer>
     </div>
