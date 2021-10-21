@@ -9,276 +9,263 @@
   </head>
   <!-- CONTENT START -->
   <body class="root">
-    <div class="page">
-      <!-- HEADER START -->
-      <header class="header page__container">
-        <div class="wrapper wrapper_place_header">
-          <a href="#" class="logo logo_place_header link-hover"
-            ><img
-              src="./images/header/logo.svg"
-              alt="Логотип UberEats"
-              class="logo__pic"
-          /></a>
-          <a
-            href="#"
-            class="header__button header__button_type_login link-hover"
-            >Войти</a
-          >
-          <a
-            href="#"
-            class="header__button header__button_type_basket link-hover"
-            aria-label="Корзина."
-          ></a>
-        </div>
-      </header>
-
-      <!-- MAIN START -->
-      <main class="main page__container">
-        <div class="wrapper">
-          <section class="content">
-            <form action class="search-form" method="GET">
-              <input
-                type="search"
-                name="search"
-                id="search-food"
-                class="search-form__input"
-                placeholder="Поиск по ресторанам и кухням"
+    <!-- HEADER START -->
+    <header class="header">
+      <div class="wrapper wrapper_place_header">
+        <a href="#" class="logo logo_place_header link-hover"
+          ><img
+            src="./images/header/logo.svg"
+            alt="Логотип Убер-еды на английском языке."
+            class="logo__pic"
+        /></a>
+        <a href="#" class="header__button header__button_type_login link-hover"
+          >Войти</a
+        >
+        <a
+          href="#"
+          class="header__button header__button_type_basket link-hover"
+          aria-label="Корзина."
+        ></a>
+      </div>
+    </header>
+    <!-- MAIN START -->
+    <main class="main">
+      <section class="wrapper wrapper_place_content">
+        <form action class="form form_type_search" method="GET">
+          <input
+            type="search"
+            name="search"
+            id="search-food"
+            class="form__input"
+            placeholder="Поиск по ресторанам и кухням"
+          />
+        </form>
+        <h1 class="section-title">Рестораны в Москве</h1>
+        <ul class="cards">
+          <li class="card card_active">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/md.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
               />
-            </form>
-            <h1 class="section-title">Рестораны в Москве</h1>
-            <ul class="cards">
-              <li class="card card_active">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img src="./images/cards/md.png" alt="" class="card__pic" />
-                  <h2 class="card__title">Макдоналдс — Газетный</h2>
-                  <p class="card__info">₽₽ • Бургеры</p>
-                  <p class="card__price">25 - 35 Min</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img
-                    src="./images/cards/dimsum.png"
-                    alt=""
-                    class="card__pic"
-                  />
-                  <h2 class="card__title">DimSum & Co — ЦДМ</h2>
-                  <p class="card__info">₽ • Японская • Китайская • Азиатская</p>
-                  <p class="card__price">40 - 50 мин</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img
-                    src="./images/cards/dvizok.png"
-                    alt=""
-                    class="card__pic"
-                  />
-                  <h2 class="card__title">ДвижОК — Манежная</h2>
-                  <p class="card__info">₽ • Американская • Европейская</p>
-                  <p class="card__price">35 - 45 мин</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img src="./images/cards/nha.png" alt="" class="card__pic" />
-                  <h2 class="card__title">НЯ — NHA</h2>
-                  <p class="card__info">₽₽ • Вьетнамская</p>
-                  <p class="card__price">30 - 40 мин</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img src="./images/cards/dzi.png" alt="" class="card__pic" />
-                  <h2 class="card__title">Точка Дзы — Цветной</h2>
-                  <p class="card__info">₽₽ • Вьетнамская</p>
-                  <p class="card__price">40 - 50 мин</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img
-                    src="./images/cards/cinnabon.png"
-                    alt=""
-                    class="card__pic"
-                  />
-                  <h2 class="card__title">Cinnabon</h2>
-                  <p class="card__info">₽ • Выпечка • Десерты • Капкейки</p>
-                  <p class="card__price">25 - 35 мин</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img
-                    src="./images/cards/pizzalove.png"
-                    alt=""
-                    class="card__pic"
-                  />
-                  <h2 class="card__title">PIZZELOVE</h2>
-                  <p class="card__info">₽₽ • Пицца</p>
-                  <p class="card__price">15 - 25 мин</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img src="./images/cards/zu.png" alt="" class="card__pic" />
-                  <h2 class="card__title">Zю кафе — Тверская</h2>
-                  <p class="card__info">₽₽ • Японская</p>
-                  <p class="card__price">25 - 35 мин</p>
-                </a>
-              </li>
-              <li class="card">
-                <a href="#" target="_blank" class="card__link card__link_mask">
-                  <div class="card__overlay"></div>
-                  <img
-                    src="./images/cards/barbq.png"
-                    alt=""
-                    class="card__pic"
-                  />
-                  <h2 class="card__title">Bar BQ Cafe — Манежная</h2>
-                  <p class="card__info">₽₽₽ • Европейская</p>
-                  <p class="card__price">30 - 40 мин</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </main>
-
-      <!-- FOOTER START -->
-      <footer class="footer page__container">
-        <div class="wrapper wrapper_place_footer">
-          <div class="footer__row">
-            <a href="#" class="logo logo_place_footer link-hover"
-              ><img
-                src="./images/footer/white-logo.svg"
-                alt=""
-                class="logo__footer"
-            /></a>
-          </div>
-
-          <div class="footer__row">
-            <div class="footer__column">
-              <form action class="language-form" method="POST">
-                <img
-                  src="./images/footer/world.svg"
-                  alt
-                  class="language-form__pic"
-                />
-                <select
-                  name="language"
-                  id="language"
-                  class="language-form__list"
-                >
-                  <option value="Русский" class="language-form__item">
-                    Русский
-                  </option>
-                </select>
-              </form>
-              <p class="hashtag"><span class="span-accent">#</span>UberEats</p>
-              <ul class="social">
-                <li class="social__item">
-                  <a
-                    href="#"
-                    class="social__button social__button_fb link-hover"
-                    aria-label="Иконка социальной сети фейсбук."
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href="#"
-                    class="social__button social__button_tw link-hover"
-                    aria-label="Иконка социальной сети тивттер."
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href="#"
-                    class="social__button social__button_insta link-hover"
-                    aria-label="Иконка социальной сети инстаграм."
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <ul class="info">
-              <li class="info__item">
-                <a href="#" class="footer__link link-hover">Об UberEats</a>
-              </li>
-              <li class="info__item">
-                <a href="#" class="footer__link link-hover"
-                  >Станьте партнёром по доставке</a
-                >
-              </li>
-              <li class="info__item">
-                <a href="#" class="footer__link link-hover"
-                  >Станьте парнёром-рестораном</a
-                >
-              </li>
-            </ul>
-            <ul class="info">
-              <li class="info__item">
-                <a href="#" class="footer__link link-hover">Все города</a>
-              </li>
-              <li class="info__item">
-                <a href="#" class="footer__link link-hover">Цены</a>
-              </li>
-              <li class="info__item">
-                <a href="#" class="footer__link link-hover">Помощь</a>
-              </li>
-              <li class="info__item">
-                <a href="#" class="footer__link link-hover" lang="en">FAQs</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__row footer__row_type_download">
-            <a href="#" class="app-link link-hover"
-              ><img
-                src="./images/footer/app/appstore.png"
-                alt="Иконка для скачивания приложения в эпп-стор."
-                class="app-link__pic"
-            /></a>
-            <a href="#" class="app-link link-hover"
-              ><img
-                src="./images/footer/app/googleplay.png"
-                alt="Иконка для скачивания приложения в гугл-плей."
-                class="app-link__pic"
-            /></a>
-          </div>
-
-          <div class="footer__row">
-            <a
-              href="#"
-              target="_blank"
-              class="footer__copyright-link link-hover"
-              lang="en"
-            >
-              © 2017 Uber Technologies Inc.
+              <h2 class="card__title">Макдоналдс — Газетный</h2>
+              <p class="card__info">₽₽ • Бургеры</p>
+              <p class="card__price">25 - 35 Min</p>
             </a>
-            <a
-              href="#"
-              target="_blank"
-              class="footer__copyright-link link-hover"
-              >Обработка персональных данных</a
-            >
-            <a
-              href="#"
-              target="_blank"
-              class="footer__copyright-link link-hover"
-              >Пользовательское соглашение</a
-            >
+          </li>
+          <li class="card">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/dimsum.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">DimSum & Co — ЦДМ</h2>
+              <p class="card__info">₽ • Японская • Китайская • Азиатская</p>
+              <p class="card__price">40 - 50 мин</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/dvizok.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">ДвижОК — Манежная</h2>
+              <p class="card__info">₽ • Американская • Европейская</p>
+              <p class="card__price">35 - 45 мин</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/nha.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">НЯ — NHA</h2>
+              <p class="card__info">₽₽ • Вьетнамская</p>
+              <p class="card__price">30 - 40 мин</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/dzi.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">Точка Дзы — Цветной</h2>
+              <p class="card__info">₽₽ • Вьетнамская</p>
+              <p class="card__price">40 - 50 мин</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/cinnabon.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">Cinnabon</h2>
+              <p class="card__info">₽ • Выпечка • Десерты • Капкейки</p>
+              <p class="card__price">25 - 35 мин</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" class="card__link">
+              <img
+                src="./images/cards/pizzalove.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">PIZZELOVE</h2>
+              <p class="card__info">₽₽ • Пицца</p>
+              <p class="card__price">15 - 25 мин</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/zu.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">Zю кафе — Тверская</h2>
+              <p class="card__info">₽₽ • Японская</p>
+              <p class="card__price">25 - 35 мин</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#" target="_blank" class="card__link">
+              <img
+                src="./images/cards/barbq.png"
+                alt="Предлагаемые рестораном бляда для демонтрации."
+                class="card__pic"
+              />
+              <h2 class="card__title">Bar BQ Cafe — Манежная</h2>
+              <p class="card__info">₽₽₽ • Европейская</p>
+              <p class="card__price">30 - 40 мин</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <div class="wrapper wrapper_place_footer">
+        <a href="#" class="logo logo_place_footer link-hover footer__row"
+          ><img
+            src="./images/footer/white-logo.svg"
+            alt="Логотип Убер-еды на английском языке."
+            class="logo__footer"
+        /></a>
+
+        <div class="footer__row">
+          <div class="footer__column">
+            <form action class="language-form" method="POST">
+              <img
+                src="./images/footer/world.svg"
+                alt
+                class="language-form__pic"
+              />
+              <select name="language" id="language" class="language-form__list">
+                <option value="Русский" class="language-form__item">
+                  Русский
+                </option>
+              </select>
+            </form>
+            <p class="hashtag"><span class="span-accent">#</span>UberEats</p>
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__button social__button_fb link-hover"
+                  aria-label="Иконка социальной сети фейсбук."
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__button social__button_tw link-hover"
+                  aria-label="Иконка социальной сети тивттер."
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__button social__button_insta link-hover"
+                  aria-label="Иконка социальной сети инстаграм."
+                ></a>
+              </li>
+            </ul>
           </div>
+          <ul class="info">
+            <li class="info__item">
+              <a href="#" class="footer__link link-hover">Об UberEats</a>
+            </li>
+            <li class="info__item">
+              <a href="#" class="footer__link link-hover"
+                >Станьте партнёром по доставке</a
+              >
+            </li>
+            <li class="info__item">
+              <a href="#" class="footer__link link-hover"
+                >Станьте парнёром-рестораном</a
+              >
+            </li>
+          </ul>
+          <ul class="info">
+            <li class="info__item">
+              <a href="#" class="footer__link link-hover">Все города</a>
+            </li>
+            <li class="info__item">
+              <a href="#" class="footer__link link-hover">Цены</a>
+            </li>
+            <li class="info__item">
+              <a href="#" class="footer__link link-hover">Помощь</a>
+            </li>
+            <li class="info__item">
+              <a href="#" class="footer__link link-hover" lang="en">FAQs</a>
+            </li>
+          </ul>
         </div>
-      </footer>
-      <a href="#" class="button-up" aria-label="Кнопка наверх."></a>
-    </div>
+
+        <div class="footer__row footer__row_type_download">
+          <a href="#" class="app-link link-hover"
+            ><img
+              src="./images/footer/app/appstore.png"
+              alt="Иконка для скачивания приложения в эпп-стор."
+              class="app-link__pic"
+          /></a>
+          <a href="#" class="app-link link-hover"
+            ><img
+              src="./images/footer/app/googleplay.png"
+              alt="Иконка для скачивания приложения в гугл-плей."
+              class="app-link__pic"
+          /></a>
+        </div>
+
+        <div class="footer__row">
+          <a
+            href="#"
+            target="_blank"
+            class="footer__copyright-link link-hover"
+            lang="en"
+          >
+            © 2017 Uber Technologies Inc.
+          </a>
+          <a href="#" target="_blank" class="footer__copyright-link link-hover"
+            >Обработка персональных данных</a
+          >
+          <a href="#" target="_blank" class="footer__copyright-link link-hover"
+            >Пользовательское соглашение</a
+          >
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="button-up" aria-label="Кнопка наверх."></a>
   </body>
 </html>

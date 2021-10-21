@@ -1,5 +1,5 @@
 .card__pic {
-  width: 308px;
-  height: 256px;
+  width: 100%;
+  object-fit: contain;
   margin: 0 0 16px;
 }
