@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-.header__button-login {
+.header__button_type_login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@
   border-radius: 2px;
 }
 
-.header__button-basket {
+.header__button_type_basket {
   background: url(./images/header/basket.png) no-repeat center;
   padding: 14px;
   width: 40px;
