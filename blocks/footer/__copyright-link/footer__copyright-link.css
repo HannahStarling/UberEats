@@ -1,0 +1,11 @@
+.footer__copyright-link {
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+}
+
+.footer__copyright-link:first-of-type {
+  margin-left: 0;
+}

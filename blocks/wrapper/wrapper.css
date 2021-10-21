@@ -1,0 +1,6 @@
+.wrapper {
+  height: inherit;
+  box-sizing: border-box;
+  max-width: 956px;
+  margin: 0 auto;
+}

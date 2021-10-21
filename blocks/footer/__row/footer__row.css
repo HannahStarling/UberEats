@@ -1,0 +1,11 @@
+.footer__row {
+  border-bottom: 1px solid #979797;
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__row:last-of-type {
+  border: none;
+}

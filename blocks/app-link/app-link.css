@@ -1,0 +1,7 @@
+.app-link {
+  margin: 0 40px 0 0;
+}
+
+.app-link:last-of-type {
+  margin: 0;
+}

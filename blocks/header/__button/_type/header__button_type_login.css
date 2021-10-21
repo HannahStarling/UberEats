@@ -1,0 +1,13 @@
+.header__button_type_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 40px;
+  text-decoration: none;
+  color: #1d1d1d;
+  padding: 14px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 2px;
+}

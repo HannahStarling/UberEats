@@ -1,0 +1,14 @@
+.button-up {
+  width: 80px;
+  height: 80px;
+  background: url(../../images/btn-up.png);
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  opacity: 0.5;
+  z-index: 2020;
+}
+
+.button-up:hover {
+  opacity: 1;
+}
