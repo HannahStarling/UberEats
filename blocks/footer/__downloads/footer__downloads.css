@@ -1,7 +1,5 @@
-.footer__row {
+.footer__downloads {
   border-bottom: 1px solid #979797;
   padding: 40px 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }

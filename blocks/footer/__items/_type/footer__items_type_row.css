@@ -1,0 +1,8 @@
+.footer__items_type_row {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 30%));
+  column-gap: 40px;
+  padding: 40px 0 0;
+}

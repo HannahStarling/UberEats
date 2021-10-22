@@ -1,8 +1,7 @@
 .language-form {
   display: flex;
   margin: 0 0 33px;
-  height: 40px;
-  min-width: 227px;
+  max-width: 227px;
   width: 100%;
   background: #3b3b3b;
   border-radius: 2px;

@@ -1,0 +1,8 @@
+.footer__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 16px);
+  gap: 23px;
+}

@@ -1,0 +1,9 @@
+.footer__menu {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  padding: 40px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 30%));
+  column-gap: 40px;
+}

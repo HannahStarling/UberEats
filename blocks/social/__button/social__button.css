@@ -1,5 +1,4 @@
 .social__button {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  padding: 12px;
 }
